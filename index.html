@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .form-control {
+        border: 3px solid rgb(160, 0, 0) !important;
+        background: #E0C8C8 !important;
+      }
+      .btn-danger,
+      .btn-outline-danger,
+      .btn-primary {
+        padding: 0.45rem 2rem !important;
+      }
+
+      .btn-danger {
+        background-color: var(--color-basic);
+      }
+
+      .btn-danger:hover {
+        background-color: var(--color-white);
+        border: 2px solid var(--color-basic);
+        color: var(--color-basic);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/img/Header.png"
+              alt="Logo"
+              width="50"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav gap-2">
+              <a class="btn btn-outline-danger" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" id="login">Login</a>
+              <a class="btn btn-danger" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalRegister">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+    </header>
+
+    <div class="modal fade" id="exampleModalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <h1 class="modal-title fs-3 text-danger mx-3 my-2" id="exampleModalLabel">Register</h1>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Fullname">
+              </div>
+            </form>
+            <a href="" type="button" class="btn w-100 btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" >Register</a>
+            <p class="text-center">Already have an account ? klik <a href="" class="text-dark text-decoration-none"><strong>Here</strong></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <h1 class="modal-title fs-3 text-danger mx-3 my-2" id="exampleModalLabel">Login</h1>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <a href="user/dashboard.html" type="button" class="btn w-100 btn-danger">Login</a>
+              <p class="text-center">Already have an account ? klik <a href="" class="text-dark text-decoration-none"><strong>Here</strong></a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- start jumbotron -->
+      <section class="jumbotron position-relative" id="jumbotron">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="bg-danger">
+                <img src="assets/img/Slice 4 1.png" alt="slice-1" class="position-absolute slice-1">
+                <img src="assets/img/Slice 3 1.png" alt="slice-2" class="position-absolute slice-2">
+                <img src="assets/img/Slice 2 1.png" alt="slice-3" class="position-absolute slice-3">
+                <img src="assets/img/Slice 1 1.png" alt="slice-4" class="position-absolute slice-4">
+                <div class="jumbotron-text ms-5 py-5">
+                  <h1>WAYSBUCKS</h1>
+                  <h5>Things are changing, but we're still here for you</h5>
+                  <p>
+                    We Have temporarily closed our in-store cafes, but select
+                    grocery and drive-thru locations remaining open.
+                    <span>Waysbuck</span>
+                    Drivers is also available
+                  </p>
+                  <h6>Lest's Order</h6>
+                </div>
+              </div>
+              <div class="col">
+                <div class="bg-home position-absolute"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end jumbotron -->
+      <section class="product" id="product">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <h2 class="pt-3 pb-4">Let's Order</h2>
+            </div>
+          </div>
+
+          <div class="row pb-5">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <a href="" onclick="alert('login terlebih dahulu !')" class="text-decoration-none">
+                  <img src="assets/img/Header.png" alt="" width="50" height="100" class="logo-product">
+                <img
+                  src="assets/img/Rectangle 4.png"
+                  class="card-img-top product-img"
+                  alt="coffe 1"
+                />
+                <div class="card-body">
+                  <p class="title-product">Ice Coffe Plam Sugar</p>
+                  <p class="price-product">Rp.27.000</p>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <a href="" onclick="alert('login terlebih dahulu !')" class="text-decoration-none">
+                  <img src="assets/img/Header.png" alt="" width="50" height="100" class="logo-product">
+                <img
+                  src="assets/img/Rectangle 4-1.png"
+                  class="card-img-top product-img"
+                  alt="coffe 1"
+                />
+                <div class="card-body">
+                  <p class="title-product">Ice Coffe Green Tea</p>
+                  <p class="price-product">Rp.31.000</p>
+                  </p>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <a href="" onclick="alert('login terlebih dahulu !')" class="text-decoration-none">
+                <img src="assets/img/Header.png" alt="" width="50" height="100" class="logo-product">
+                <img
+                  src="assets/img/Rectangle 4-2.png"
+                  class="card-img-top product-img"
+                  alt="coffe 1"
+                />
+                <div class="card-body">
+                  <p class="title-product">Hanami Late</p>
+                  <p class="price-product">Rp.29.000</p>
+                </div>
+               </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <a href="" onclick="alert('login terlebih dahulu !')" class="text-decoration-none">
+                <img src="assets/img/Header.png" alt="" width="50" height="100" class="logo-product">
+                <img
+                  src="assets/img/Rectangle 4-3.png"
+                  class="card-img-top product-img"
+                  alt="coffe 1"
+                />
+                <div class="card-body">
+                  <p class="title-product">Clepon Coffe</p>
+                  <p class="price-product">Rp.27.000</p>
+                </div>
+               </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- jQuery v3.7.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
